@@ -1,0 +1,14 @@
+ Scanner scanned = new Scanner(System.in);
+         
+        System.out.println("Enter name to search");
+        String rt = scanned.next();
+         
+        Scanner scannedFile = new Scanner(nameOfFile);
+        while(scannedFile.hasNext()){
+            String search = scannedFile.next();
+            if(search.equals(rt)){
+                System.out.println("Found: " +search);
+            } else {
+                System.out.println("No data found.");
+            }
+        }
